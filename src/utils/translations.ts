@@ -44,7 +44,7 @@ export const translations: Record<'en' | 'pt', Translation> = {
           2: "I also work with relational databases like MySQL and PostgreSQL, and non-relational databases like MongoDB.",
         },
         languages: {
-          1: "I'm native in Portuguese but I'm also can speak English.",
+          1: "I'm native in Portuguese but I also can speak English.",
         },
         objective: {
           1: "My goal is to create apps and websites that can help people connect, have fun, and solve their problems.",
