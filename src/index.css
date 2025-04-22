@@ -84,6 +84,10 @@ body {
     box-shadow: 0 0 10px #2fe7fe, 0 0 20px #2fe7fe, 0 0 30px #2fe7fe;
     animation: neonUnderline 0.3s ease-in-out;
   }
+
+  .toasty-animation {
+    animation: toasty-animation .5s ease-in-out forwards;
+  }
   
   @keyframes neonUnderline {
     0% {
@@ -149,6 +153,12 @@ body {
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: white }
+  }
+
+  @keyframes toasty-animation {
+    0% { transform: translateX(0); transform: translateY(0); }
+    50% { transform: translateX(-100%); transform: translateY(-100%); }
+    100% { transform: translateX(0); transform: translateY(0); }
   }
 }
 

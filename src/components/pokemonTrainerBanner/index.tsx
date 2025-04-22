@@ -26,6 +26,8 @@ import GengarCry from '/audios/gengar.mp3'
 import LittleRootTown from '/audios/litte-root-town.mp3'
 import { useLanguage } from '../../hooks/useLanguage'
 import { translations } from '../../utils/translations'
+import Toasty from '/assets/toasty.png'
+import ToastyCry from '/audios/toasty.mp3'
 
 export default function PokemonTrainerBanner() {
   const { language } = useLanguage();
@@ -35,6 +37,7 @@ export default function PokemonTrainerBanner() {
   const [displayedText, setDisplayedText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const backgroundAudioRef = useRef<HTMLAudioElement | null>(null);
+  const [toastyCount, setToastyCount] = useState(0);
   const fullMessageRef = useRef('');
 
   function playAudio(audio: string) {
@@ -94,6 +97,12 @@ export default function PokemonTrainerBanner() {
 
     return () => clearInterval(typingInterval);
   }, [messageIndex, messageId, language]);
+
+  useEffect(() => {
+    if (toastyCount === 10) {
+      playAudio(ToastyCry);
+    }
+  }, [toastyCount]);
 
   return (
     <div className="flex items-center justify-center background-garden pt-25 relative overflow-hidden w-full">
@@ -194,7 +203,7 @@ export default function PokemonTrainerBanner() {
           <div className="absolute w-3 h-3 bg-white border-r-2 border-b-2 border-gray-800 transform rotate-45 -bottom-2 left-[40%]"></div>
         </div>
 
-        <img src={MeInBits} alt="Me in bits" className='w-full' />
+        <img src={MeInBits} alt="Me in bits" className='w-full' onClick={() => setToastyCount((prev) => prev >= 10 ? prev : prev + 1)} />
       </div>
 
       <img
@@ -269,6 +278,11 @@ export default function PokemonTrainerBanner() {
           </button>
         </div>
       </div>
+
+      {/* Toasty Easter egg */}
+      {toastyCount === 10 && (
+        <img src={Toasty} alt="Toasty" className="w-30 absolute rotate-[-60deg] bottom-[200px] right-[-130px] z-6 toasty-animation" />
+      )}
     </div>
   )
 }
