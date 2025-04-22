@@ -235,7 +235,7 @@ export default function PokemonTrainerBanner() {
       </button>
 
       {/* Menu Screen */}
-      <div className="absolute bottom-0 right-0 border-1 border-black rounded-md flex items-center justify-center w-120 h-35 glassmorphism z-5">
+      <div className="absolute bottom-0 right-0 border-1 border-black rounded-md flex items-center justify-center w-full md:w-120 h-35 glassmorphism z-5">
         <div className="w-full h-full flex flex-wrap gap-2 p-1 text-white font-bold">
           <button
             onClick={() => { setMessageId('about'); setMessageIndex(1) }}

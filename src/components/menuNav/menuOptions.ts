@@ -8,7 +8,15 @@ export const menuOptions = [
     path: '/about'
   },
   {
+    id: 'resume',
+    path: '/resume'
+  },
+  {
+    id: 'projects',
+    path: '/projects'
+  },
+  {
     id: 'contact',
     path: '/contact'
-  }
+  },
 ];

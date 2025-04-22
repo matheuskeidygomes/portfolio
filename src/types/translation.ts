@@ -3,13 +3,88 @@ export interface Translation {
     home: string;
     about: string;
     contact: string;
+    resume: string;
+    projects: string;
   };
   greeting: {
     title: string;
     description: string;
   };
+  contactUs: {
+    title: string;
+    description: string;
+    validationError: string;
+    successMessage: string;
+    name: string;
+    email: string;
+    message: string;
+    send: string;
+    nameRequired: string;
+    emailRequired: string;
+    messageRequired: string;
+    emailInvalid: string;
+    defaultError: string;
+  };
   footer: {
     rights: string;
+  };
+  resume: {
+    title: {
+      personal: string;
+      education: string;
+      languages: string;
+      skills: string;
+      experience: string;
+      usefulLinks: string;
+      cloud: string;
+      messaging: string;
+      devops: string;
+      frontend: string;
+      backend: string;
+      database: string;
+      attachments: string;
+      resume: string;
+      resumeFile: string;
+      age: string;
+      location: string;
+      email: string;
+      phone: string;
+    };
+    personal: {
+      age: string;
+      location: string;
+      email: string;
+      phone: string;
+      role: string;
+    };
+    education: {
+      university: string;
+      course: string;
+      graduation: string;
+    };
+    languages: {
+      portuguese: string;
+      english: string;
+    };
+    skills: {
+      frontend: string;
+      backend: string;
+      database: string;
+      cloud: string;
+      messaging: string;
+      devops: string;
+    };
+    experience: {
+      [key: string]: {
+        company: string;
+        role: string;
+        period: string;
+        description: string;
+        role2?: string;
+        period2?: string;
+        location: string;
+      };
+    };
   };
   trainer: {
     options: {
