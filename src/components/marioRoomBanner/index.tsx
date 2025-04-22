@@ -4,6 +4,7 @@ import { useLanguage } from "../../hooks/useLanguage";
 import { translations } from "../../utils/translations";
 import emailjs from "@emailjs/browser";
 import ContactForm from "../contactForm";
+import MarioRoom from "/assets/background-room.gif";
 
 export default function MarioRoomBanner() {
   const { language } = useLanguage();
@@ -89,12 +90,14 @@ export default function MarioRoomBanner() {
     <div className="flex flex-col lg:flex-row lg:justify-between w-full">
 
       {/* Left side Container */}
-      <div className="flex flex-5 background-room"></div>
+      <div className="flex w-full lg:w-[55%]">
+        <img src={MarioRoom} alt="Mario Room" className="w-full h-full object-cover" />
+      </div>
 
       {/* Right side Container */}
-      <div className="flex flex-col gap-5 p-10 flex-4">
+      <div className="flex flex-col w-full gap-5 p-10 lg:w-[45%]">
         <div className="flex flex-col gap-6">
-          <h1 className="text-white text-3xl">{translations[language].contactUs.title}</h1>
+          <h1 className="text-white text-3xl font-bold">{translations[language].contactUs.title}</h1>
           <p className="text-white">{translations[language].contactUs.description}</p>
         </div>
 
