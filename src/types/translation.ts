@@ -6,6 +6,11 @@ export interface Translation {
     resume: string;
     projects: string;
   };
+  projects: {
+    banner: {
+      message: string;
+    };
+  };
   greeting: {
     title: string;
     description: string;

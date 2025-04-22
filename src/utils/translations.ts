@@ -9,9 +9,14 @@ export const translations: Record<'en' | 'pt', Translation> = {
       resume: 'Resume',
       projects: 'Projects',
     },
+    projects: {
+      banner: {
+        message: 'Here are some of my projects, I hope you enjoy them!',
+      },
+    },
     contactUs: {
       title: "Contact Me",
-      description: "I'm here to help you. If you have any questions, please fill out the form below and I will get back to you as soon as possible.",
+      description: "I'm here to help you. If you have any questions, fill out the form below explaining what you need and I will get back to you as soon as possible.",
       validationError: "Please fill out all required fields.",
       successMessage: "Message sent successfully!",
       defaultError: "Error sending message. Please try again.",
@@ -168,9 +173,14 @@ export const translations: Record<'en' | 'pt', Translation> = {
       title: "Olá! Me chamo Matheus Keidy",
       description: "Seja bem-vindo ao meu portfólio! Sou um engenheiro de software full stack formado em Análise e Desenvolvimento de Sistemas, com experiência em desenvolvimento de aplicações web e mobile. Sou apaixonado por tecnologia e sempre estou em busca de novos desafios. Gostaria de saber um pouco mais sobre mim? Clique no botão abaixo!",
     },
+    projects: {
+      banner: {
+        message: 'Aqui estão alguns dos meus projetos, espero que você goste!',
+      },
+    },
     contactUs: {
       title: "Entre em contato",
-      description: "Estou aqui para te ajudar. Se você tiver alguma dúvida, por favor, preencha o formulário abaixo e eu retornarei o mais rápido possível.",
+      description: "Estou aqui para te ajudar. Se você tiver alguma dúvida, preencha este formulário abaixo explicando o que precisa e eu te retornarei o mais rápido possível.",
       validationError: "Por favor, preencha todos os campos obrigatórios.",
       successMessage: "Mensagem enviada com sucesso!",
       defaultError: "Erro ao enviar mensagem. Por favor, tente novamente.",
