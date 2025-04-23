@@ -22,7 +22,7 @@ export default function ZeldaRoomBanner() {
   }, [language]);
 
   return (
-    <div className="flex max-h-[400px] relative" >
+    <div className="flex max-h-[400px] relative border-b-1 border-gray-800">
     <img src={ZeldaRoom} alt="Zelda Room" className="object-cover w-full h-[250px] md:h-auto" />
 
     <div className="bg-white rounded-xl p-2 min-w-[200px] max-w-[200px] border-1 border-black absolute bottom-2/3 left-[45%] sm:left-[50%] md:left-[55%]">

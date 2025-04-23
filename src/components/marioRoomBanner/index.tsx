@@ -91,7 +91,7 @@ export default function MarioRoomBanner() {
     <div className="flex flex-col lg:flex-row lg:justify-between w-full">
 
       {/* Left side Container */}
-      <div className="flex flex-1">
+      <div className="flex flex-1 border-b-1 border-gray-800 lg:border-b-0 lg:border-r-1 lg:border-gray-800">
         <img src={MarioRoom} alt="Mario Room" className="w-full h-full object-cover" />
       </div>
 
