@@ -85,6 +85,12 @@ body {
     background-repeat: no-repeat;
   }
 
+  .background-souls {
+    background-image: url('/assets/darksouls.gif');
+    background-size: cover;
+    background-position: bottom;
+  }
+
   .levitate-around {
     animation: levitate-around 10s infinite;
   }

@@ -134,4 +134,7 @@ export interface Translation {
       };
     };
   };
+  notFound: {
+    title: string;
+  };
 }

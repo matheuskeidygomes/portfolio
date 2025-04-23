@@ -21,6 +21,9 @@ export const translations: Record<'en' | 'pt', Translation> = {
         buttonText: "See More",
       },
     },
+    notFound: {
+      title: "You are far away from home, friend. I think you got lost. Try to find your way back to the home page.",
+    },
     contactUs: {
       title: "Contact Me",
       description: "I'm here to help you. If you have any questions, fill out the form below explaining what you need and I will get back to you as soon as possible.",
@@ -193,6 +196,9 @@ export const translations: Record<'en' | 'pt', Translation> = {
       card: {
         buttonText: "Ver mais",
       },
+    },
+    notFound: {
+      title: "Você está longe de casa, amigo. Acho que você se perdeu. Tente encontrar seu caminho de volta para a página inicial.",
     },
     contactUs: {
       title: "Entre em contato",

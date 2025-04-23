@@ -8,7 +8,7 @@ import Header from '../components/layout/header';
 import Footer from '../components/layout/footer';
 import Container from '../components/layout/container';
 import Content from '../components/layout/content';
-
+import NotFound from '../pages/notFound';
 
 export default function Router() {
   return (
@@ -22,6 +22,7 @@ export default function Router() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Content>
         <Footer />
