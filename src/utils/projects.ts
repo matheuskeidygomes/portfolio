@@ -82,7 +82,7 @@ export const projects = {
     {
       id: 0,
       title: "Sony Playstation Portal",
-      description: "A portal for the Sony Playstation, with a modern and responsive design.",
+      description: "Responsive Website for the video game console Playstation and his exclusive games from Sony. Developed for study and practice of web development.",
       link: links.sony,
       images: images.sony,
       isPrivate: false,
@@ -90,7 +90,7 @@ export const projects = {
     {
       id: 1,
       title: "Dashboard Findme",
-      description: "A dashboard for the Findme, with a modern and responsive design.",
+      description: "Dashboard for data analysis, developed for manage and monitoring security and facilities of companies that use the FindMe system.",
       link: links.findme,
       images: images.findme,
       isPrivate: true,
@@ -98,7 +98,7 @@ export const projects = {
     {
       id: 2,
       title: "Git Explore",
-      description: "A explore for the Git, with a modern and responsive design.",
+      description: "Website developed to explore the Github API. Developed for study and practice of web development.",
       link: links.gitExplore,
       images: images.gitExplore,
       isPrivate: false,
@@ -106,7 +106,7 @@ export const projects = {
     {
       id: 3,
       title: "Anne AI",
-      description: "A AI for the Anne, with a modern and responsive design.",
+      description: "A system made with AI to explore the capabilities of the OpenAI API and its machine learning models. In this project it is possible to chat with a AI called Anne, which simulates a real person to answer questions and perform tasks.",
       link: links.anneAI,
       images: images.anneAI,
       isPrivate: false,
@@ -114,7 +114,7 @@ export const projects = {
     {
       id: 4,
       title: "Dot Portal",
-      description: "A portal for the Dot, with a modern and responsive design.",
+      description: "Responsive website for the company Dot, developed for study and practice of web development.",
       link: links.dot,
       images: images.dot,
       isPrivate: false,
@@ -122,7 +122,7 @@ export const projects = {
     {
       id: 5,
       title: "Bomberzilla Portal",
-      description: "A portal for the Bomberzilla, with a modern and responsive design.",
+      description: "Portal developed for the mobile game Bomberzilla, a game created for the NFT market, in the P2E (Play to Earn) segment.",
       link: links.bbz,
       images: images.bbz,
       isPrivate: false,
@@ -131,8 +131,8 @@ export const projects = {
   pt: [
     {
       id: 0,
-      title: "Portal da Sony Playstation",
-      description: "Um portal para a Sony Playstation, com um design moderno e responsivo.",
+      title: "Portal Sony Playstation",
+      description: "Website responsivo para a console Playstation e seus jogos exclusivos da Sony. Desenvolvido para fins de estudo e prática de desenvolvimento web.",
       link: links.sony,
       images: images.sony,
       isPrivate: false,
@@ -140,7 +140,7 @@ export const projects = {
     {
       id: 1,
       title: "Dashboard Findme",
-      description: "Um dashboard para a Findme, com um design moderno e responsivo.",
+      description: "Dashboard para análise de dados, desenvolvido para gerenciar e monitorar operações de segurança e facilities das empresas aderentes ao uso do sistema FindMe.",
       link: links.findme,
       images: images.findme,
       isPrivate: true,
@@ -148,7 +148,7 @@ export const projects = {
     {
       id: 2,
       title: "Git Explore",
-      description: "Um explore para o Git, com um design moderno e responsivo.",
+      description: "Website desenvolvido para explorar a API do Github. Desenvolvido para fins de estudo e prática de desenvolvimento web.",
       link: links.gitExplore,
       images: images.gitExplore,
       isPrivate: false,
@@ -156,23 +156,23 @@ export const projects = {
     {
       id: 3,
       title: "Anne AI",
-      description: "Um AI para a Anne, com um design moderno e responsivo.",
+      description: "Sistema de IA para explorar as capacidades da API da OpenAI e seus modelos de machine learning. Neste projeto é possível conversar com uma IA chamada Anne, que simula uma pessoa real para responder perguntas e realizar tarefas.",
       link: links.anneAI,
       images: images.anneAI,
       isPrivate: false,
     },
     {
       id: 4,
-      title: "Dot Portal",
-      description: "Um portal para a Dot, com um design moderno e responsivo.",
+      title: "Portal Dot",
+      description: "Website responsivo para a empresa Dot, desenvolvido para fins de estudo e prática de desenvolvimento web.",
       link: links.dot,
       images: images.dot,
       isPrivate: false,
     },
     {
       id: 5,
-      title: "Bomberzilla Portal",
-      description: "Um portal para a Bomberzilla, com um design moderno e responsivo.",
+      title: "Portal Bomberzilla",
+      description: "Portal desenvolvido para o game mobile Bomberzilla, um jogo criado para o mercado de NFTs, no segmento de P2E (Play to Earn).",
       link: links.bbz,
       images: images.bbz,
       isPrivate: false,
