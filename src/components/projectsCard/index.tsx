@@ -15,7 +15,10 @@ export default function ProjectsCard({
   const { language } = useLanguage();
 
   return (
-    <div className="card glassmorphism border-1 border-gray-800 rounded-lg shadow-lg transition-all duration-300 hover:translate-y-[-5px] cursor-pointer">
+    <div 
+      onClick={setModalOpen}
+      className="card glassmorphism border-1 border-gray-800 rounded-lg shadow-lg transition-all duration-300 hover:translate-y-[-5px] cursor-pointer"
+    >
       <div className="card-image rounded-t-lg">
         <img src={image} alt="Project 1" className="w-[100%] rounded-t-lg" />
       </div>

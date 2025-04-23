@@ -16,7 +16,7 @@ const Modal = ({ onClose, project }: { onClose: () => void, project: Project }) 
 
   return (
     <div className="fixed top-0 left-0 bottom-0 right-0 w-full h-full bg-black/80 flex justify-center items-center z-1">
-      <div className="flex flex-col w-full max-h-[90vh] min-h-[600px] h-[80vh] bg-gradient opacity-95 menu-slide-in px-5 pb-5 pt-12 relative border-y-1 border-gray-800 overflow-y-auto overflow-x-hidden">
+      <div className="flex flex-col w-full max-h-[90vh] min-h-[600px] h-[80vh] bg-gradient-transparent menu-slide-in px-5 pb-5 pt-12 relative border-y-1 border-gray-800 overflow-y-auto overflow-x-hidden">
         <button
           className="flex flex-col justify-center items-center gap-1.5 cursor-pointer hover:scale-110 transition-all duration-300 absolute top-0 right-0 p-5"
           onClick={onClose}
@@ -27,12 +27,12 @@ const Modal = ({ onClose, project }: { onClose: () => void, project: Project }) 
           <span className={`block w-7 h-0.5 bg-white transition-all -rotate-45 -translate-y-2`}></span>
         </button>
 
-        <div className="flex flex-col gap-2 w-full h-full self-center lg:w-[90%] lg:flex-row">
-          <div className="flex-1 lg:flex-3 p-3">
+        <div className="flex flex-col self-center w-full h-full gap-5 lg:gap-2 lg:w-[90%] lg:flex-row">
+          <div className="flex-1 flex items-center lg:flex-3 lg:p-3 lg:items-start">
             <Carrousel images={project.images} />
           </div>
 
-          <div className="flex-1 lg:flex-2 p-3 flex flex-col gap-5">
+          <div className="flex-1 flex flex-col gap-5 lg:flex-2 lg:p-3 ">
             <h1 className="text-3xl font-bold text-white">{project.title}</h1>
             <p className="text-md text-gray-300">{project.description}</p>
             {project.isPrivate && (
