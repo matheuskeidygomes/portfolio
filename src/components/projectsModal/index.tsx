@@ -1,7 +1,7 @@
 import { useLanguage } from "../../hooks/useLanguage";
 import { translations } from "../../utils/translations";
 import { FaUserLock } from 'react-icons/fa'
-
+import Carrousel from "../carrousel";
 interface Project {
   id: number;
   title: string;
@@ -27,14 +27,9 @@ const Modal = ({ onClose, project }: { onClose: () => void, project: Project }) 
           <span className={`block w-7 h-0.5 bg-white transition-all -rotate-45 -translate-y-2`}></span>
         </button>
 
-        <div className="flex flex-col gap-2 w-full lg:w-[90%] lg:flex-row h-full self-center">
-          <div className="flex-1 lg:flex-3 p-3 flex flex-col gap-3">
-            <img src={project.images[0]} alt={project.title} className="w-full rounded-lg border-1 shadow-lg border-gray-800" />
-            <div className="flex flex-row max-w-full gap-3 ">
-              {project.images.map((image) => (
-                <img src={image} alt={project.title} className="w-[20%] rounded-lg border-1 shadow-lg border-gray-800" />
-              ))}
-            </div>
+        <div className="flex flex-col gap-2 w-full h-full self-center lg:w-[90%] lg:flex-row">
+          <div className="flex-1 lg:flex-3 p-3">
+            <Carrousel images={project.images} />
           </div>
 
           <div className="flex-1 lg:flex-2 p-3 flex flex-col gap-5">
