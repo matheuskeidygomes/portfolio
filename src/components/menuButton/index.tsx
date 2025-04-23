@@ -6,7 +6,7 @@ interface MenuButtonProps {
 export default function MenuButton({ isMenuOpen, setIsMenuOpen }: MenuButtonProps) {
   return (
     <button 
-    className="md:hidden flex flex-col justify-center items-center gap-1.5 z-10 cursor-pointer hover:scale-110 transition-all duration-300"
+    className="md:hidden flex flex-col justify-center items-center gap-1.5 z-13 cursor-pointer hover:scale-110 transition-all duration-300"
     onClick={() => setIsMenuOpen(!isMenuOpen)}
     aria-label="Toggle menu"
   >

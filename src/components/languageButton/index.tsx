@@ -4,7 +4,7 @@ export default function LanguageButton() {
   const { language, toggleLanguage } = useLanguage();
 
   return (
-    <div className="hidden md:flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <button
         onClick={toggleLanguage}
         className="relative flex items-center w-16 h-8 rounded-full bg-gray-800/60 border border-[#2fe7fe] p-1 transition-all duration-300 focus:outline-none cursor-pointer"
