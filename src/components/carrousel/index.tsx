@@ -109,7 +109,7 @@ export default function Carrousel({ images }: { images: string[] }) {
       <div className="relative">
         <div
           ref={thumbnailsRef}
-          className="flex overflow-x-auto overflow-y-hidden gap-2 p-1 snap-x scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-300"
+          className="flex overflow-x-auto overflow-y-hidden gap-2 p-1 snap-x scrollbar-thin scrollbar"
         >
           {images.map((image, index) => (
             <img

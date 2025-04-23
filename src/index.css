@@ -9,6 +9,22 @@ body {
   padding: 0;
 }
 
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #d4d4d480;
+    border-radius: 100vh;
+  }
+}
+
 @layer components {
   .bg-gradient {
     background: #020024;

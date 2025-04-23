@@ -16,7 +16,7 @@ const Modal = ({ onClose, project }: { onClose: () => void, project: Project }) 
 
   return (
     <div className="fixed top-0 left-0 bottom-0 right-0 w-full h-full bg-black/80 flex justify-center items-center z-1">
-      <div className="flex flex-col w-full max-h-[90vh] min-h-[600px] h-[80vh] bg-gradient-transparent menu-slide-in px-5 pb-5 pt-12 relative border-y-1 border-gray-800 overflow-y-auto overflow-x-hidden">
+      <div className="flex flex-col w-full max-h-[90vh] min-h-[600px] h-[80vh] bg-gradient-transparent menu-slide-in px-5 pb-5 pt-12 relative border-y-1 border-gray-800 overflow-y-auto overflow-x-hidden scrollbar">
         <button
           className="flex flex-col justify-center items-center gap-1.5 cursor-pointer hover:scale-110 transition-all duration-300 absolute top-0 right-0 p-5"
           onClick={onClose}
