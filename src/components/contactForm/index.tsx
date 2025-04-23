@@ -18,7 +18,7 @@ export default function ContactForm({
   const { language } = useLanguage();
 
   return (
-    <form className="flex flex-col gap-5 z-1">
+    <form className="flex flex-col gap-5 z-2">
       <div className="flex flex-col gap-2">
         <TextField
           id="name"

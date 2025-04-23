@@ -19,7 +19,7 @@ export default function MenuNav({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boo
     <nav 
       className={`
         gap-8
-        ${isMenuOpen ? 'flex flex-col items-center justify-center menu-slide-in text-lg fixed top-0 left-0 w-full h-screen bg-[#071d39ed] z-12' : 'hidden'} 
+        ${isMenuOpen ? 'flex flex-col items-center justify-center menu-slide-in text-lg fixed top-0 left-0 w-full h-screen bg-[#071d39ed] z-1' : 'hidden'} 
         md:flex md:flex-row md:justify-between md:text-md
       `}
     >

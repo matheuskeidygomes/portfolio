@@ -10,10 +10,18 @@ export interface Translation {
     banner: {
       message: string;
     };
+    modal: {
+      buttonText: string;
+      isPrivate: string;
+    };
+    card: {
+      buttonText: string;
+    };
   };
   greeting: {
     title: string;
     description: string;
+    button: string;
   };
   contactUs: {
     title: string;

@@ -11,7 +11,7 @@ export default function Header() {
   useScrollLock(isMenuOpen);
   
   return (
-    <header className="flex justify-center items-center glassmorphism z-12">
+    <header className={`flex justify-center items-center glassmorphism ${isMenuOpen ? 'z-10' : 'z-8'}`}>
       <div className="flex gap-5 p-5 w-[90%] justify-between items-center">
         <Link to="/">
           <Logo />

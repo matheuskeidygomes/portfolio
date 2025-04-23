@@ -13,6 +13,13 @@ export const translations: Record<'en' | 'pt', Translation> = {
       banner: {
         message: 'Here are some of my projects, I hope you enjoy them!',
       },
+      modal: {
+        buttonText: "Visit Project",
+        isPrivate: "This project is private, you must be logged in to access it.",
+      },
+      card: {
+        buttonText: "See More",
+      },
     },
     contactUs: {
       title: "Contact Me",
@@ -32,6 +39,7 @@ export const translations: Record<'en' | 'pt', Translation> = {
     greeting: {
       title: "Hello! I'm Matheus Keidy",
       description: "Welcome to my portfolio! I'm a full stack software engineer graduated in Systems Analysis and Development, with experience in web and mobile applications development. I'm passionate about technology and always looking for new challenges. Want to know more about me? Click on the button below!",
+      button: "Know more about me",
     },
     footer: {
       rights: `© ${new Date().getFullYear()} Matheus Keidy. All rights reserved.`,
@@ -172,10 +180,18 @@ export const translations: Record<'en' | 'pt', Translation> = {
     greeting: {
       title: "Olá! Me chamo Matheus Keidy",
       description: "Seja bem-vindo ao meu portfólio! Sou um engenheiro de software full stack formado em Análise e Desenvolvimento de Sistemas, com experiência em desenvolvimento de aplicações web e mobile. Sou apaixonado por tecnologia e sempre estou em busca de novos desafios. Gostaria de saber um pouco mais sobre mim? Clique no botão abaixo!",
+      button: "Saiba mais sobre mim",
     },
     projects: {
       banner: {
         message: 'Aqui estão alguns dos meus projetos, espero que você goste!',
+      },
+      modal: {
+        buttonText: "Visitar Projeto",
+        isPrivate: "Este projeto é privado, você deve estar logado para acessá-lo.",
+      },
+      card: {
+        buttonText: "Ver mais",
       },
     },
     contactUs: {

@@ -226,7 +226,7 @@ export default function PokemonTrainerBanner() {
 
       {/* Toggle Sound */}
       <button
-        className="absolute left-3 bottom-3 p-2 bg-black opacity-80 rounded-full cursor-pointer hover:bg-opacity-50 transition-all z-10 text-white"
+        className="absolute left-3 bottom-3 p-2 bg-black opacity-80 rounded-full cursor-pointer hover:bg-opacity-50 transition-all z-7 text-white"
         onClick={() => setIsSoundOn(!isSoundOn)}
         aria-label={isSoundOn ? "Mute sound" : "Unmute sound"}
       >
@@ -244,7 +244,7 @@ export default function PokemonTrainerBanner() {
       </button>
 
       {/* Menu Screen */}
-      <div className="absolute bottom-0 right-0 border-1 border-black rounded-md flex items-center justify-center w-full md:w-120 h-35 glassmorphism z-5">
+      <div className="absolute bottom-0 right-0 border-1 border-black rounded-md flex items-center justify-center w-full md:w-120 h-35 glassmorphism z-6">
         <div className="w-full h-full flex flex-wrap gap-2 p-1 text-white font-bold">
           <button
             onClick={() => { setMessageId('about'); setMessageIndex(1) }}
@@ -281,7 +281,7 @@ export default function PokemonTrainerBanner() {
 
       {/* Toasty Easter egg */}
       {toastyCount === 10 && (
-        <img src={Toasty} alt="Toasty" className="w-30 absolute rotate-[-60deg] bottom-[200px] right-[-130px] z-6 toasty-animation" />
+        <img src={Toasty} alt="Toasty" className="w-30 absolute rotate-[-60deg] bottom-[200px] right-[-130px] z-5 toasty-animation" />
       )}
     </div>
   )

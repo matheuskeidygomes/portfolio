@@ -10,10 +10,10 @@ export default function LanguageButton() {
         className="relative flex items-center w-16 h-8 rounded-full bg-gray-800/60 border border-[#2fe7fe] p-1 transition-all duration-300 focus:outline-none cursor-pointer"
         aria-label={`Change language to ${language === 'en' ? 'Portuguese' : 'English'}`}
       >
-        <span className={`absolute text-xs font-medium left-2 z-10 transition-all duration-300 ${language === 'pt' ? 'text-black font-bold opacity-50' : 'text-[#2fe7fe] font-bold'}`}>
+        <span className={`absolute text-xs font-medium left-2 z-1 transition-all duration-300 ${language === 'pt' ? 'text-black font-bold opacity-50' : 'text-[#2fe7fe] font-bold'}`}>
           PT
         </span>
-        <span className={`absolute text-xs font-medium right-2 z-10 transition-all duration-300 ${language === 'en' ? 'text-black  font-bold opacity-50' : 'text-[#2fe7fe] font-bold'}`}>
+        <span className={`absolute text-xs font-medium right-2 z-1 transition-all duration-300 ${language === 'en' ? 'text-black  font-bold opacity-50' : 'text-[#2fe7fe] font-bold'}`}>
           EN
         </span>
 
